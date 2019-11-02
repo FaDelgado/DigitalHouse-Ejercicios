@@ -1,0 +1,87 @@
+body{
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 1px solid grey;
+  padding: 40px;
+  font-family: 'Courgette';
+
+}
+
+header{
+  padding-bottom: 20px;
+  border-bottom: solid grey 1px;
+}
+main{
+  /* width: 960px; */
+  overflow: hidden;
+  box-sizing: border-box;
+
+}
+#carta{
+  /* width: 300px; */
+  padding: 15px;
+  float: left;
+  line-height: 50px;
+}
+a{
+  text-decoration: none;
+}
+.menu {
+  padding: 15px;
+  /* width: 610px; */
+  float: left;
+  border-left: solid grey 1px;
+  font-size: 20px;
+}
+.menu i{
+  color: grey;
+  font-size: 15px;
+}
+li{
+  list-style-type: none;
+}
+
+section img{
+  float: left;
+  margin-top: 100px;
+  width: 400px;
+
+}
+/*FOOTER*/
+/* .cajas{
+  border: dashed 1px black;
+} */
+footer{
+  border-top: 1px solid grey;
+  padding: 0 20px;
+  text-align: center;
+  overflow: hidden;
+}
+#logo{
+  display: inline;
+}
+#redes{
+margin-top: 75px;
+float: left;
+display: inline;
+}
+
+#contactanos{
+  margin-top: 75px;
+  float: right;
+  display: inline;
+}
+#logo img{
+width: 200px;
+
+
+}
+.fa-facebook{
+  color:blue;
+}
+.fa-instagram{
+  color:red;
+}
+.fa-youtube{
+  color:red;
+}

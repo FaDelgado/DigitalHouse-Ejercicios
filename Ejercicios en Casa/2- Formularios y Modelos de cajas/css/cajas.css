@@ -1,0 +1,71 @@
+div{
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  color: white;
+
+}
+
+#caja1{
+  background-color: white;
+  color: red;
+  border: black solid 2px;
+  padding-left: 10px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+}
+#caja2{
+  background-color: green;
+  border-top: red solid 3px;
+  padding-top: 15px;
+  margin-left: 25px;
+  box-sizing: border-box;
+}
+#caja3{
+ background-color: violet;
+ border-right: blue dashed 5px;
+ padding-right: 5px;
+ margin-top: 15px;
+ box-sizing: border-box;
+}
+
+
+
+/*EJERCICIO*/
+
+header {
+background-color: black;
+color: white;
+font-size: 28px;
+border-bottom: solid red 1px;
+padding-top: 5px;
+padding-bottom: 5px;
+padding-left: 10px;
+margin-bottom: 15px;
+box-sizing: border-box;
+
+}
+
+section {
+width: 50%;
+margin-left: 25%;
+background-color: gainsboro;
+margin-bottom: 15px;
+padding-top: 5px;
+padding-bottom: 5px;
+padding-left: 10px;
+border-radius: black dashed 2px;
+box-sizing: border-box;
+
+}
+
+footer {
+background-color: black;
+color: white;
+border-top: solid red 1px;
+padding-top: 5px;
+padding-bottom: 5px;
+height: 40px;
+box-sizing: border-box;
+
+}

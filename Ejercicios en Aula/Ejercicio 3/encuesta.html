@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Encuesta</title>
+    <link rel="stylesheet" href="css/encuesta.css">
+  </head>
+  <body>
+
+
+    <h1>Formulario</h1>
+    <h2>Completa la encuentas.</h2>
+
+  <form class="" action="index.html" method="post">
+
+    <ul>
+      <li><label for="lugar">¿De donde sos?</label></li><br>
+      <select class="" name="lugar" >
+        <option value="ar">Argentina</option>
+        <option value="br">Brasil</option>
+        <option value="ur">Uruguay</option>
+      </select>
+
+      <li><label for="iluminacion">¿Que te parecio la iluminacion?</label></li><br>
+      <input type="checkbox" name="iluminacion" value="buena">Buena. <br>
+      <input type="checkbox" name="iluminacion" value="muy buena">Muy Buena. <br>
+      <input type="checkbox" name="iluminacion" value="mala">Mala.
+
+
+      <li><label for="gustos"></label>¿Que tipo de plato fue el que mas te gusto?</li><br>
+      <input type="checkbox" name="gustos" value="Entradas">Entradas.<br>
+      <input type="checkbox" name="gustos" value="Platos principales">Plato principales.<br>
+      <input type="checkbox" name="gustos" value="Postres">Postres.<br>
+      <input type="checkbox" name="gustos" value="otros">Otros.
+
+
+      <li><label for="recomendar">¿Recomendarias el lugar?</label></li><br>
+      <input type="radio" name="recomendar" value="s">Si.
+      <input type="radio" name="recomendar" value="n">No.
+
+
+      <li><label for="comentario">¿Porque?</label></li><br>
+      <textarea name="comentario" rows="8" cols="80"></textarea>
+
+
+      <li>Dejanos tus datos y nos pondremos en contacto con vos.</li><br>
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="datos" value="" placeholder="Tu nombre" required> <br><br>
+      <label for="email">Email:</label>
+      <input type="email" name="datos" value="" placeholder="Tu Email" required>
+
+    </ul>
+
+    <button id="enviar" type="submit" name="button">Enviar</button>
+    <button id="resetear" type="reset" name="button">Resetear</button>
+
+  </form>
+
+
+
+  </body>
+</html>

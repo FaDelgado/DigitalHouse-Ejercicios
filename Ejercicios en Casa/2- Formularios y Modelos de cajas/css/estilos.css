@@ -1,0 +1,18 @@
+p:hover{ /*Cuando pasamos la flecha del mouse encima del texto*/
+  background-color: red;
+}
+p:focus{/*Cuando hacemos foco o seleccionamos el texto*/
+  background-color: yellow;
+}
+p:nth-child(2){/*Selecciona los elementos hermanos de todos los parrafos ignorando los elementos padres de los mismos*/
+  background-color: green;
+}
+p:nth-child(even){/*Selecciona los elementos hermanos pares*/
+  font-size: 18px;
+  font-style: italic;
+}
+p:nth-child(odd){/*Selecciona los elementos hermanos impares*/
+  font-size: 12px;
+  font-weight: bold;
+  color: grey;
+}

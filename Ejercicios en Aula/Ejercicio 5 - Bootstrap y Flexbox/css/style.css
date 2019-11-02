@@ -1,0 +1,127 @@
+/* Bordes de cajas */
+
+/* .caja, .caja2, .caja3 {
+  border: 3px dashed orange;
+}
+.elemento, p{
+  border: 2px dashed red;
+} */
+/* Bordes de cajas */
+
+.container {
+  font-family: 'Lato', sans-serif;
+}
+.container h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+
+}
+
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark{
+  background-color: #2C3E50 !important;
+}
+
+/* Freelance Portfolio */
+
+.caja{
+  background-color: #18BC9C;
+  color: white;
+  padding: 3% 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.elemento{
+  margin: 1%;
+  text-align: center;
+}
+
+/* Portfolio */
+
+.caja2, .caja3{
+  padding: 3% 0;
+}
+div .caja2 {
+  text-align: center;
+}
+div .caja2 .elemento{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.caja2 img{
+  width: 30%;
+  margin: 1.5%;
+}
+.caja3 img{
+  margin: 1% 0;
+}
+.caja2.star, .caja3.star{
+  background-color: rgb(36, 196, 134);
+  color: white;
+}
+
+/* ABOUT */
+.parrafo{
+  margin: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap:wrap;
+}
+.parrafo p{
+  width: 48%;
+  padding: 1%;
+}
+
+/* Formulario */
+
+form{
+  margin: 5% 25%;
+}
+form .btn{
+  background-color:  rgb(36, 196, 134);
+  color:white;
+}
+#textarea{
+  color: grey;
+}
+.no-border{
+  border: 0 !important;
+  border-radius: 0 !important;
+  resize: none;
+}
+form .btn:hover{
+  background-color:  rgb(131, 241, 198);
+}
+
+
+/* FOOTER */
+footer{
+  background-color: rgb(39, 63, 80);
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 2%;
+}
+
+footer p{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+footer p i{
+  margin: 2%;
+  font-size: 2em;
+}
+.footerfinal{
+  background-color: rgb(5, 33, 42);
+  padding-top: 1%;
+}

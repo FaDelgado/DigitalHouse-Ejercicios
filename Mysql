@@ -1,0 +1,82 @@
+-- Practica Integradora --
+
+-- Primera Etapa --
+
+-- Ejercicio 1 --
+select genres.name as NombreDelGenero, movies.title as TituloDePelicula
+from movies
+inner join genres on movies.genre_id = genres.id
+order by movies.title desc; 
+
+-- Ejercicio 2 --
+select movies.title, genres.name, actors.first_name, actors.last_name
+from movies
+inner join genres on movies.genre_id = genres.id
+inner join actor_movie on actor_movie.movie_id = movies.id
+inner join actors on actor_movie.actor_id = actors.id;
+
+-- Ejercicio 3 --
+select actors.first_name, movies.title
+from movies
+inner join actor_movie on movie_id = movies.id
+inner join actors on actor_id = actors.id
+order by actors.first_name;
+
+-- Ejercicio 4 -- 
+select genres.name, movies.title, count(*)
+from movies
+left join genres on movies.genre_id = genres.id
+group by genres.name
+order by genres.name and movies.title
+;
+-- CONSULTAR ORDENAMIENTO --
+
+-- Ejercicio 5 --
+select episodes.number as Capitulo, seasons.number as Temporada, series.title, genres.name as Genero, COUNT(actors.id)
+from series
+inner join seasons on serie_id = series.id
+inner join episodes on season_id = seasons.id
+inner join genres on genre_id = genres.id
+inner join actor_episode on episode_id = episodes.id
+inner join actors on actor_id = actors.id
+group by actor_id;
+-- REVISAR EL GROUP BY y el COUNT()--
+
+-- Ejercicio 5 de nuevo --
+select episodes.number, seasons.number, series.title, genres.name
+from series
+inner join genres on genre_id = genres.id
+inner join seasons on serie_id = series.id
+inner join episodes on season_id = seasons.id
+inner join actor_episode on episode_id = episodes.id
+inner join actors on actor_id = actors.id;
+
+-- Ejercicio 6 --
+select genres.name, avg(movies.rating)
+from movies
+inner join genres on genre_id = genres.id
+where movies.rating > 5
+group by genres.name;
+
+-- Ejercicio 7 --
+select series.title, count(episodes.number)
+from episodes
+inner join seasons on season_id = seasons.id
+inner join series on serie_id = series.id
+group by series.title
+having series.release_date = 2010;
+
+-- Ejercicio 7 de nuevo --
+select series.title, count(episodes.number)
+from episodes
+inner join seasons on season_id = seasons.id
+inner join series on serie_id = series.id
+group by series.title;
+
+-- Ejercicio 8 --
+select series.title, count(episodes.number)
+from series
+inner join seasons on serie_id = series.id
+inner join episodes on season_id = seasons.id
+group by series.title
+having series.release_date = 2019;

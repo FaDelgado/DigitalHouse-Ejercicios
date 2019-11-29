@@ -1,0 +1,88 @@
+import java.util.ArrayList;
+
+public class Ejercicios2 {
+
+	public static void main(String[] args) {
+		
+		//Ejercicio 1
+		System.out.println("Ejercicio 1: " + esImparMayorADiez(62));
+		
+		//Ejercicio 2
+		System.out.println("Ejercicio 2: " + algunoMayor(6, 17, 8, 5));
+		
+		//Ejercicio 3
+		//System.out.println(promedio(array[1,2,3,4,5]));
+		//System.out.println(promedio([1,2]));
+		
+		//Ejercicio 4
+		
+		for(int i = 0; i < 100; i++) {
+			if(i % 2 != 0) {
+				System.out.println(i);
+			}
+		}
+		//Ejercicio 5
+		System.out.println("Ejercicio 5 true: " + contieneLaLetraA("Hoy estoy mal"));
+		System.out.println("Ejercicio 5 false: " + contieneLaLetraA("Hoy estoy bien"));
+		
+		//Ejercicio 6
+		System.out.println(contieneLetra('s', "Hola como estas"));
+		
+		
+	}
+	
+	//Ejercicio 1
+	static Boolean esImparMayorADiez(int num1) {
+		if(num1 % 2 != 0 && num1 > 10) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+	
+	//Ejercicio 2
+	static Boolean algunoMayor(int numA, int numB, int numC, int numD) {
+		if((numA > numC && numA > numD) || (numB > numC && numB > numD)) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+	
+	//Ejercicio 3
+	static Double promedio(ArrayList<Integer> array) {
+		//array = new ArrayList<Integer>();
+		//array.add(10);
+		//array.add(20);
+		//array.add(30);
+		//array.add(40);
+		//array.add(50)
+		
+		int suma = 0;
+		double promedio = suma / array.size();
+		
+		for(int Objeto : array) {
+			suma = suma + Objeto;
+		}
+		return promedio;
+	}
+	
+	//Ejercicio 5
+	static Boolean contieneLaLetraA(String letra) {
+		if(letra.contains("a")) {
+			return true;
+		}
+		return false;
+	}
+	
+	//Ejercicio 6
+	static Boolean contieneLetra(Character unaLetra, String unTexto) {
+		for(int i = 0; i < unTexto.length(); i++) {
+			if(unTexto.charAt(i) == unaLetra) {
+				return true;
+			}
+		}return false;
+	}
+		
+		
+}
